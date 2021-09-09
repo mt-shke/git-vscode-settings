@@ -16,3 +16,6 @@ Testing terminal commands
     git add .
     git commit -m "2nd commit message"
     git push origin branchName
+
+    git push -u origin master
+    git push
