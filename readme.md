@@ -1,4 +1,4 @@
-Testing terminal commands   
+Terminal commands 
 
     ls => list files
     cd .. => change directory to .. (parent folder)
@@ -7,6 +7,9 @@ Testing terminal commands
     cd test-repository => change directory to 'test-repository'
     code . => launch vsCode with the current folder  
     
+    
+Git commands
+ 
     git init => initialize current folder for git
     git add . => add current folder to the files ready to commit (pre commit command)
     git commit -m "commit message" => commit with a "commit message" (pre push command)
