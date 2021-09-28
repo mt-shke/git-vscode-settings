@@ -1,4 +1,4 @@
-Terminal commands 
+Navigate commands 
 
     ls => list files
     cd .. => change directory to .. (parent folder)
