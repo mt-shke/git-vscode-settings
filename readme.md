@@ -25,3 +25,4 @@ Git commands
 
     git pull
     git clone sshAddress
+    git remote set-url origin sshAddress => change git remote repository
