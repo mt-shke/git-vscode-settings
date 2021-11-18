@@ -6,9 +6,9 @@ Navigate commands
     mkdir test-repository => make directory called 'test-repository'
     cd test-repository => change directory to 'test-repository'
     code . => launch vsCode with the current folder  
+    code . -r => launch vsCode with the current folder in the current vsCode window
     
-    
-Git commands
+Local/remote repository, init and pushes commands
  
     git init => initialize current folder for git
     git add . => add current folder to the files ready to commit (pre commit command)
@@ -27,6 +27,8 @@ Git commands
     git push -f origin main => force push to main
 
     git remote set-url origin sshAddress => change git remote repository
+    
+Branches commands
     
     git checkout -b dev => create dev branch and switch to it
     git checkout main => switch to main branch
