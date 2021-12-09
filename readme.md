@@ -26,7 +26,7 @@ Local/remote repository, init and pushes commands
     git pull => get repository files
     git push -f origin main => force push to main
 
-    git remote set-url origin sshAddress => change git remote repository
+    git remote set-url origin sshAddress => change git remote repository to sshAddress
     
 Branches commands
     
