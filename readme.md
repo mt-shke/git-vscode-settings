@@ -11,10 +11,10 @@ Navigate commands
 Local/remote repository, init and pushes commands
  
     git init => initialize current folder for git
-    git add . => add current folder to the files ready to commit (pre commit command)
-    git commit -m "commit message" => commit with a "commit message" (pre push command)
     git remote add origin sshAdress => add a new git folder (sshAdress), linked to the current local folder
     git status => check the branch you are currently working on
+    git add . => add current folder to the files ready to commit (pre commit command)
+    git commit -m "commit message" => commit with a "commit message" (pre push command)
     git push -u origin main => push the current folder to git on the branch 'main'
     
     git add . => add files ready for another commit etc
@@ -37,3 +37,4 @@ Branches commands
     
     git branch => show the branch you are currently working on
     git merge dev => merge the dev branch to the branch you are currently working on
+    git merge main dev => merge the dev branch to the main branch
