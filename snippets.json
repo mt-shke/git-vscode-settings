@@ -1,0 +1,249 @@
+{
+	// GLOBAL
+	"Add console log": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "cl",
+		"body": "console.log($1)",
+		"description": "Fast console log"
+	},
+	"Add className": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "cn",
+		"body": "className='$1'",
+		"description": "Fast className"
+	},
+	"Add class": {
+		"scope": "javascript, typescript , typescriptreact,react,html",
+		"prefix": "cla",
+		"body": "class='$1'",
+		"description": "Fast class"
+	},
+	"''": {
+		"scope": "javascript, typescript ,typescriptreact,react,html",
+		"prefix": "''",
+		"body": "'$1'$0",
+		"description": "1 year saved in your life"
+	},
+
+	// JAVASCRIPT
+	// S
+	// C
+	// R
+	// I
+	// P
+	// T
+
+	"const variable": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "co",
+		"body": ["const $1 = $2", "$3"],
+		"description": "const variable"
+	},
+
+	// FUNCTION
+	"const function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "fn",
+		"body": ["const $1 = ($2) => {", "$3", "}", "$4"],
+		"description": "const function"
+	},
+	"const async function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "afn",
+		"body": ["const $1 = async ($2) => {", "$3", "}", "$4"],
+		"description": "const async function"
+	},
+	"const req,res function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "fnr",
+		"body": ["const $1 = (req,res) => {", "$2", "}", "$3"],
+		"description": "const  function with req, res"
+	},
+	"const async req,res function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "afnr",
+		"body": ["const $1 = async (req,res) => {", "$2", "}", "$3"],
+		"description": "const async function with req, res"
+	},
+	"arrow const function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "arr",
+		"body": ["const $1 = ($2) =>$3", "$4"],
+		"description": "direct arrow function"
+	},
+
+	// CALLBACK FUNCTION
+	"fc callback": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "cb",
+		"body": ["($1) => $2", "$3"],
+		"description": "callback function"
+	},
+	"fc callback braces - avec accolades": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "cbb",
+		"body": ["($1) => {$2} $3"],
+		"description": "braces callback function"
+	},
+	"fc callback req res ": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "cbr",
+		"body": ["(req,res) => {", "$1", "}", "$2"],
+		"description": "callback function with req & res"
+	},
+
+	// IF ELSE - TRY BLOCK
+	"if statement": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "iff",
+		"body": ["if ($1) {$2}"],
+		"description": "if statement"
+	},
+	"if else statement": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "ifff",
+		"body": ["if ($1) {", "$2", "} else {", "$3 ", "}"],
+		"description": "if else statement"
+	},
+	"try catch": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "tryc",
+		"body": ["try {", "$1", "} catch(error) {", "$2 ", "}"],
+		"description": "try catch"
+	},
+
+	// Node Backend
+	// O
+	// D
+	// E
+
+	"const require variable": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "cor",
+		"body": ["const $1 = require($2)", "$3"],
+		"description": "const + require variable"
+	},
+
+	"Require ": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "req",
+		"body": ["require($1)", "$2"],
+		"description": "Require for NodeJs"
+	},
+	"Dirname ": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "dir",
+		"body": ["__dirname ($1)"],
+		"description": "dirname"
+	},
+	"Module exports ": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "mod",
+		"body": ["module.exports = $1"],
+		"description": "module exports"
+	},
+	"res status ": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "ress",
+		"body": ["res.status($1)$2", "$3"],
+		"description": "res.status"
+	},
+	"res status json": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "ressjs",
+		"body": ["res.status($1).json({$2})", "$3"],
+		"description": "res.status + json"
+	},
+	"res success + message": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "suu",
+		"body": ["res.status($1).json({success: true, message: $2, $3})", "$4"],
+		"description": "res.status + json success & message"
+	},
+
+	// REACT JSX
+	// E
+	// A
+	// C
+	// T
+
+	"useState shortcut": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "usta",
+		"body": ["const [$1, $2] = useState($3)", "$4"],
+		"description": "useState shortcut"
+	},
+	"functionnal component": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "rfc",
+		"body": ["const $1 = (props) => {", "$3", "return <div>$2</div>}", "export default $1;"],
+		"description": "dirname"
+	},
+	"async functionnal component": {
+		"scope": "javascript, typescript ,typescriptreact,react,html",
+		"prefix": "arfc",
+		"body": ["const $1 = async ($2) => {", "$4", "return <div>$3</div>}", "export default $1;"],
+		"description": "dirname"
+	},
+
+	"exp async function": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "expaf",
+		"body": ["export const $1 = async ($2) => {", "$3", "}"],
+		"description": "dirname"
+	},
+	"exp default": {
+		"scope": "javascript, typescript , typescriptreact, react",
+		"prefix": "expd",
+		"body": ["export default $1"],
+		"description": "dirname"
+	},
+	// REACT - TYPESCRIPT
+
+	"TS React functionnal component": {
+		"scope": "javascript, typescript, typescriptreact, react",
+		"prefix": "tfc",
+		"body": ["const $1:React.FC$2 = ($3 $4) => {", "$5", "return <div>$6</div>}", "export default $1; $7"],
+		"description": "dirname"
+	},
+
+	// MARKDOWN
+	// A
+	// R
+	// K
+	// D
+	// O
+	// W
+	// N
+	"details summary js": {
+		"scope": "markdown",
+		"prefix": "detajs",
+		"body": ["<details>", "<summary>$1</summary>", "", "```js", "$2", "```", "", "</details>"],
+		"description": "1 year saved in your life"
+	},
+	"details summary": {
+		"scope": "markdown",
+		"prefix": "deta",
+		"body": ["<details>", "<summary>$1</summary>", "$2", "</details>"],
+		"description": "1 year saved in your life"
+	},
+	"jsCode": {
+		"scope": "markdown",
+		"prefix": "jsco",
+		"body": ["$1", "```js", "$2", "```", "$3"],
+		"description": "jsCode"
+	}
+
+	// "`${}`": {
+	// 	"scope": "javascript, typescript ,typescript,react,html",
+	// 	"prefix": "${",
+	// 	"body": "`${$1}`",
+	// 	"description": "1 year saved in your life"
+	// },
+	// "bracket": {
+	// 	"scope": "javascript, typescript ,typescript,react,html",
+	// 	"prefix": "{",
+	// 	"body": "`{$1}",
+	// 	"description": "1 year saved in your life"
+	// }
+}
