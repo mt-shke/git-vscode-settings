@@ -1,0 +1,16 @@
+# Attention à bien remplacer l'email par le votre ;)
+ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
+
+# Pour récupérer le contenu de notre clé publique
+cat ~/.ssh/id_rsa.pub
+
+eval "$(ssh-agent -s)" # pour lancer ssh-agent de façon sécurisée
+ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
+
+
+# N'oubliez pas de changer le nom par le votre… ;)
+git config --global user.name "mon nom d'utilisateur"
+# N'oubliez pas de changer l'email par le votre… ;)
+git config --global user.email "mon email associé a mon compte github"
+git config --global core.editor nano # ou code pour Visual Studio Code, etc.
+git config --global color.ui true
