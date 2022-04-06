@@ -1,25 +1,25 @@
 {
 	// GLOBAL
 	"Add console log": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "cl",
 		"body": "console.log($1)",
 		"description": "Fast console log"
 	},
 	"Add className": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "cn",
 		"body": "className='$1'",
 		"description": "Fast className"
 	},
 	"Add class": {
-		"scope": "javascript, typescript , typescriptreact,react,html",
+		"scope": "javascript, typescript , typescriptreact,react, javascriptreact,html",
 		"prefix": "cla",
 		"body": "class='$1'",
 		"description": "Fast class"
 	},
 	"''": {
-		"scope": "javascript, typescript ,typescriptreact,react,html",
+		"scope": "javascript, typescript ,typescriptreact,react, javascriptreact,html",
 		"prefix": "''",
 		"body": "'$1'$0",
 		"description": "1 year saved in your life"
@@ -34,7 +34,7 @@
 	// T
 
 	"const variable": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "co",
 		"body": ["const $1 = $2", "$3"],
 		"description": "const variable"
@@ -42,31 +42,31 @@
 
 	// FUNCTION
 	"const function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "fn",
 		"body": ["const $1 = ($2) => {", "$3", "}", "$4"],
 		"description": "const function"
 	},
 	"const async function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "afn",
 		"body": ["const $1 = async ($2) => {", "$3", "}", "$4"],
 		"description": "const async function"
 	},
 	"const req,res function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "fnr",
 		"body": ["const $1 = (req,res) => {", "$2", "}", "$3"],
 		"description": "const  function with req, res"
 	},
 	"const async req,res function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "afnr",
 		"body": ["const $1 = async (req,res) => {", "$2", "}", "$3"],
 		"description": "const async function with req, res"
 	},
 	"arrow const function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "arr",
 		"body": ["const $1 = ($2) =>$3", "$4"],
 		"description": "direct arrow function"
@@ -74,19 +74,19 @@
 
 	// CALLBACK FUNCTION
 	"fc callback": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "cb",
 		"body": ["($1) => $2", "$3"],
 		"description": "callback function"
 	},
 	"fc callback braces - avec accolades": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "cbb",
 		"body": ["($1) => {$2} $3"],
 		"description": "braces callback function"
 	},
 	"fc callback req res ": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "cbr",
 		"body": ["(req,res) => {", "$1", "}", "$2"],
 		"description": "callback function with req & res"
@@ -94,19 +94,19 @@
 
 	// IF ELSE - TRY BLOCK
 	"if statement": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "iff",
 		"body": ["if ($1) {$2}"],
 		"description": "if statement"
 	},
 	"if else statement": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "ifff",
 		"body": ["if ($1) {", "$2", "} else {", "$3 ", "}"],
 		"description": "if else statement"
 	},
 	"try catch": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "tryc",
 		"body": ["try {", "$1", "} catch(error) {", "$2 ", "}"],
 		"description": "try catch"
@@ -118,44 +118,44 @@
 	// E
 
 	"const require variable": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "cor",
 		"body": ["const $1 = require($2)", "$3"],
 		"description": "const + require variable"
 	},
 
 	"Require ": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "req",
 		"body": ["require($1)", "$2"],
 		"description": "Require for NodeJs"
 	},
 	"Dirname ": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "dir",
 		"body": ["__dirname ($1)"],
 		"description": "dirname"
 	},
 	"Module exports ": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "mod",
 		"body": ["module.exports = $1"],
 		"description": "module exports"
 	},
 	"res status ": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "ress",
 		"body": ["res.status($1)$2", "$3"],
 		"description": "res.status"
 	},
 	"res status json": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "ressjs",
 		"body": ["res.status($1).json({$2})", "$3"],
 		"description": "res.status + json"
 	},
 	"res success + message": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "suu",
 		"body": ["res.status($1).json({success: true, message: $2, $3})", "$4"],
 		"description": "res.status + json success & message"
@@ -168,32 +168,32 @@
 	// T
 
 	"useState shortcut": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "usta",
 		"body": ["const [$1, $2] = useState($3)", "$4"],
 		"description": "useState shortcut"
 	},
 	"functionnal component": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "rfc",
 		"body": ["const $1 = (props) => {", "$3", "return <div>$2</div>}", "export default $1;"],
 		"description": "dirname"
 	},
 	"async functionnal component": {
-		"scope": "javascript, typescript ,typescriptreact,react,html",
+		"scope": "javascript, typescript ,typescriptreact,react, javascriptreact,html",
 		"prefix": "arfc",
 		"body": ["const $1 = async ($2) => {", "$4", "return <div>$3</div>}", "export default $1;"],
 		"description": "dirname"
 	},
 
 	"exp async function": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "expaf",
 		"body": ["export const $1 = async ($2) => {", "$3", "}"],
 		"description": "dirname"
 	},
 	"exp default": {
-		"scope": "javascript, typescript , typescriptreact, react",
+		"scope": "javascript, typescript , typescriptreact, react, javascriptreact",
 		"prefix": "expd",
 		"body": ["export default $1"],
 		"description": "dirname"
@@ -201,7 +201,7 @@
 	// REACT - TYPESCRIPT
 
 	"TS React functionnal component": {
-		"scope": "javascript, typescript, typescriptreact, react",
+		"scope": "javascript, typescript, typescriptreact, react, javascriptreact",
 		"prefix": "tfc",
 		"body": ["const $1:React.FC$2 = ($3 $4) => {", "$5", "return <div>$6</div>}", "export default $1; $7"],
 		"description": "dirname"
@@ -235,13 +235,13 @@
 	}
 
 	// "`${}`": {
-	// 	"scope": "javascript, typescript ,typescript,react,html",
+	// 	"scope": "javascript, typescript ,typescript,react, javascriptreact,html",
 	// 	"prefix": "${",
 	// 	"body": "`${$1}`",
 	// 	"description": "1 year saved in your life"
 	// },
 	// "bracket": {
-	// 	"scope": "javascript, typescript ,typescript,react,html",
+	// 	"scope": "javascript, typescript ,typescript,react, javascriptreact,html",
 	// 	"prefix": "{",
 	// 	"body": "`{$1}",
 	// 	"description": "1 year saved in your life"
