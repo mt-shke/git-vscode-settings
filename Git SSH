@@ -5,6 +5,12 @@ ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
 # Pour récupérer le contenu de notre clé publique
 cat ~/.ssh/id_rsa.pub
 
+---
+- Aller dans : Settings > SSH and GPG keys > New SSH key >
+- Coller la clé
+
+---
+
 eval "$(ssh-agent -s)" # pour lancer ssh-agent de façon sécurisée
 ssh-add ~/.ssh/id_rsa # pour activer la clé SSH
 
