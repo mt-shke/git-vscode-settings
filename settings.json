@@ -4,7 +4,7 @@
     "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "material-icon-theme",
     "settingsSync.ignoredSettings": [],
-  prettier format 
+    // prettier format
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "prettier.tabWidth": 4,
