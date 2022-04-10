@@ -35,6 +35,7 @@ ssh-add ~/.ssh/id_rsa
 Change user infos
 
 ```bash
+test => git clone git@github.com:mt-shke/test-repo.git
 git config --global user.name "mon nom d'utilisateur"
 git config --global user.email "mon email associé a mon compte github"
 git config --global core.editor code
