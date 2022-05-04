@@ -68,7 +68,7 @@
     "arrow const function": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "arr",
-        "body": ["const $1 = ($2) =>$3", "$4"],
+        "body": ["const $1 = ($2) => $3", "$4"],
         "description": "direct arrow function"
     },
 
@@ -167,12 +167,6 @@
     // C
     // T
 
-    "useState shortcut": {
-        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
-        "prefix": "usta",
-        "body": ["const [$1, $2] = useState($3)", "$4"],
-        "description": "useState shortcut"
-    },
     "functionnal component": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "rfc",
@@ -182,7 +176,7 @@
             "return <div>$2</div>}",
             "export default $1;"
         ],
-        "description": "dirname"
+        "description": "react functionnal component"
     },
     "async functionnal component": {
         "scope": "javascript, typescript ,typescriptreact,react, javascriptreact,html",
@@ -208,6 +202,19 @@
         "body": ["export default $1"],
         "description": "dirname"
     },
+    "useState shortcut": {
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "prefix": "usta",
+        "body": ["const [$1, $2] = useState($3)", "$4"],
+        "description": "useState shortcut"
+    },
+    "useEffect shortcut": {
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "prefix": "usee",
+        "body": ["useEffect(() => {", "$1", " }, [$2])", "$3"],
+        "description": "useEffect shortcut"
+    },
+
     // REACT - TYPESCRIPT
 
     "TS React functionnal component": {
@@ -256,7 +263,13 @@
         "prefix": "jsco",
         "body": ["$1", "```js", "$2", "```", "$3"],
         "description": "jsCode"
-    }
+    },
+    "bashCode": {
+        "scope": "markdown",
+        "prefix": "bco",
+        "body": ["$1", "```bash", "$2", "```", "$3"],
+        "description": "bashCode"
+    },
 
     // "`${}`": {
     // 	"scope": "javascript, typescript ,typescript,react, javascriptreact,html",
@@ -269,5 +282,55 @@
     // 	"prefix": "{",
     // 	"body": "`{$1}",
     // 	"description": "1 year saved in your life"
-    // }
+    // },
+
+    // R E A C T - N A T I V E
+
+    "native component": {
+        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "prefix": "nfc",
+        "body": [
+            "import { View, Text } from 'react-native';",
+            "",
+            "const $1 = (props) => {",
+            "$3",
+            "return <View>",
+            "<Text>$2",
+            "</Text>",
+            "</View>}",
+            "",
+            "export default $1;"
+        ],
+        "description": "native functionnal component"
+    },
+
+    "native styleSheet": {
+        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "prefix": "nsty",
+        "body": [
+            "import { StyleSheet } from 'react-native';",
+            "",
+            "const styles = StyleSheet.create({",
+            "$1: {",
+            "$2",
+            "},",
+            "});",
+            "$3"
+        ],
+        "description": "native stylesheet"
+    },
+
+    "native inline style": {
+        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "prefix": "nstl",
+        "body": ["style={styles.$1} $2"],
+        "description": "native inline style"
+    },
+
+    "inline style": {
+        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "prefix": "istl",
+        "body": ["style={{$1}} $2"],
+        "description": "inline style"
+    }
 }
