@@ -1,18 +1,21 @@
-Etape windows, peut être passer si sous linux
+Etape windows, peut être passée si sous linux
 
 ```js
-// Sous windows: Installer Git et utiliser Git Bash
+// Sous windows:
+- Aller sur le site internet de Git, télécharger et installer Git(normalement avec Git Bash inclus) et lancer Git Bash
 ```
 
-Sur Git Bash, effectuer les commandes ci-dessous et choisir un mot de passe perso:
+```js
+// - Sur Git Bash, exécuter les commandes ci-dessous et choisir un mot de passe perso:
 
-```bash
 ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
+// => Crée une clé ssh avec votre email
+
 cat ~/.ssh/id_rsa.pub
+// => Copie la clé ssh nouvellement crée, à partir de l'emplacement par défault: C:\Users\username\.ssh
 ```
 
 ```js
-// - Copier la clé
 // - Aller sur votre profile github dans : Settings > SSH and GPG keys > New SSH key
 // - Coller la clé et valider
 ```
@@ -38,13 +41,14 @@ ssh-add ~/.ssh/id_rsa
 
 ```
 
-<!-- global -->
+<!-- Etape suivante -->
 
 ```js
-// ssh-keygen -p
+ssh-keygen -p
+// si bug mot de passe
 
-//  test => en CLI faire un :
-git clone git@github.com:mt-shke/test-repo.git
+// addresse git pour effectuer un test => en CLI faire un :
+git clone git@github.com:mt-shke/git-vscode-settings.git
 ```
 
 -   config git settings
@@ -59,9 +63,9 @@ git config --global core.editor code
 <details>
 <summary>Plus si bug</summary>
 
-<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
-<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
-<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
+<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
 
 ```bash
 https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
