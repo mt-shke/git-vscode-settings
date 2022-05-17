@@ -1,15 +1,16 @@
 {
+    // Custom Snippets for VsCode
     // GLOBAL
     "Add console log": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "cl",
-        "body": "console.log($1)",
+        "body": ["console.log($1)", "$2"],
         "description": "Fast console log"
     },
     "Add className": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "cn",
-        "body": "className='$1'",
+        "body": "className='$1' $2",
         "description": "Fast className"
     },
     "Add class": {
@@ -332,5 +333,31 @@
         "prefix": "istl",
         "body": ["style={{$1}} $2"],
         "description": "inline style"
+    },
+
+    //  P H P
+    "php": {
+        "scope": "html, php",
+        "prefix": "php",
+        "body": ["<?php", "$1", "", "?>"],
+        "description": "php"
+    },
+    "echo br": {
+        "scope": "html, php",
+        "prefix": "br",
+        "body": ["echo '<br>';", "", "$1"],
+        "description": "echo br"
+    },
+    "echo var dump": {
+        "scope": "html, php",
+        "prefix": "vd",
+        "body": ["echo '<pre>';", "var_dump($1);", "echo '</pre>';", "$2"],
+        "description": "echo var dump"
+    },
+    "print_r": {
+        "scope": "html, php",
+        "prefix": "vd",
+        "body": ["echo '<pre>';", "print_r($1);", "echo '</pre>';", "$2"],
+        "description": "echo print_r"
     }
 }

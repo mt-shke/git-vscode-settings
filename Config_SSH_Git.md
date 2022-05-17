@@ -1,10 +1,10 @@
 Etape windows, peut être passer si sous linux
 
 ```js
-// Sous windows: Installer Git et utiliser la CLI Git Bash
+// Sous windows: Installer Git et utiliser Git Bash
 ```
 
-In Command Line Interface, ne rien mettre en pass:
+Sur Git Bash, effectuer les commandes ci-dessous et choisir un mot de passe perso:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
@@ -22,6 +22,10 @@ windows
 ```bash
 eval `ssh-agent`
 ssh-add
+# ou ssh-add ~/.ssh/id_rsa
+
+
+# et ouvrir vsCode
 code
 
 ```
@@ -32,21 +36,32 @@ linux
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
-si passphrase bug:
-ssh-keygen -p
 ```
 
-C
+<!-- global -->
+
+```js
+// ssh-keygen -p
+
+//  test => en CLI faire un :
+git clone git@github.com:mt-shke/test-repo.git
+```
+
+-   config git settings
 
 ```bash
-test => git clone git@github.com:mt-shke/test-repo.git
 git config --global user.name "mon nom d'utilisateur"
 git config --global user.email "mon email associé a mon compte github"
 git config --global core.editor code
 
 ```
 
-<!-- ----------- -->
+<details>
+<summary>Plus si bug</summary>
+
+<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
+<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
+<!-- plus de ressources si bug persiste, mais normalement falcutatifs -->
 
 ```bash
 https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
@@ -70,3 +85,5 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
     Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
 }
 ```
+
+</details>
