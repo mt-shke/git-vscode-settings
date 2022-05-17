@@ -1,23 +1,26 @@
 {
-    // Custom Snippets for VsCode
-    // GLOBAL
+    // Custom Snippets for VsCode:
+    // Settings > User Snippets
+
+    // G L O B A L
+
     "Add console log": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "cl",
         "body": ["console.log($1)", "$2"],
-        "description": "Fast console log"
+        "description": "console log"
     },
     "Add className": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "cn",
         "body": "className='$1' $2",
-        "description": "Fast className"
+        "description": "className"
     },
     "Add class": {
         "scope": "javascript, typescript , typescriptreact,react, javascriptreact,html",
         "prefix": "cla",
         "body": "class='$1'",
-        "description": "Fast class"
+        "description": "class"
     },
     "''": {
         "scope": "javascript, typescript ,typescriptreact,react, javascriptreact,html",
@@ -58,7 +61,7 @@
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "fnr",
         "body": ["const $1 = (req,res) => {", "$2", "}", "$3"],
-        "description": "const  function with req, res"
+        "description": "const function with req, res"
     },
     "const async req,res function": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
@@ -227,7 +230,7 @@
             "return <div>$6</div>}",
             "export default $1; $7"
         ],
-        "description": "dirname"
+        "description": "typescript react functionnal component"
     },
 
     // MARKDOWN
@@ -272,19 +275,6 @@
         "description": "bashCode"
     },
 
-    // "`${}`": {
-    // 	"scope": "javascript, typescript ,typescript,react, javascriptreact,html",
-    // 	"prefix": "${",
-    // 	"body": "`${$1}`",
-    // 	"description": "1 year saved in your life"
-    // },
-    // "bracket": {
-    // 	"scope": "javascript, typescript ,typescript,react, javascriptreact,html",
-    // 	"prefix": "{",
-    // 	"body": "`{$1}",
-    // 	"description": "1 year saved in your life"
-    // },
-
     // R E A C T - N A T I V E
 
     "native component": {
@@ -325,14 +315,14 @@
         "scope": "javascript, typescript ,typescript,react, javascriptreact",
         "prefix": "nstl",
         "body": ["style={styles.$1} $2"],
-        "description": "native inline style"
+        "description": "add native styles from stylesheet"
     },
 
     "inline style": {
         "scope": "javascript, typescript ,typescript,react, javascriptreact",
         "prefix": "istl",
         "body": ["style={{$1}} $2"],
-        "description": "inline style"
+        "description": "add direct inline styles"
     },
 
     //  P H P
@@ -356,7 +346,7 @@
     },
     "print_r": {
         "scope": "html, php",
-        "prefix": "vd",
+        "prefix": "prir",
         "body": ["echo '<pre>';", "print_r($1);", "echo '</pre>';", "$2"],
         "description": "echo print_r"
     }
