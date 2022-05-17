@@ -2,8 +2,10 @@ Etape windows, peut être passée si sous linux
 
 ```js
 // Sous windows:
-- Aller sur le site internet de Git, télécharger et installer Git(normalement avec Git Bash inclus) et lancer Git Bash
+// - Aller sur le site internet de Git, télécharger et installer Git(normalement Git Bash est inclus) et lancer Git Bash
 ```
+
+En CLI ou Git Bash:
 
 ```js
 // - Sur Git Bash, exécuter les commandes ci-dessous et choisir un mot de passe perso:
@@ -12,7 +14,7 @@ ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
 // => Crée une clé ssh avec votre email
 
 cat ~/.ssh/id_rsa.pub
-// => Copie la clé ssh nouvellement crée, à partir de l'emplacement par défault: C:\Users\username\.ssh
+// => Copie dans votre presse-papiers la clé ssh nouvellement crée dans le ficher id_rsa.pub, à partir de l'emplacement par défault: C:\Users\username\.ssh
 ```
 
 ```js
@@ -20,40 +22,41 @@ cat ~/.ssh/id_rsa.pub
 // - Coller la clé et valider
 ```
 
-windows
+sous windows
 
 ```bash
 eval `ssh-agent`
 ssh-add
 # ou ssh-add ~/.ssh/id_rsa
+# Stocke la clé privée en mémoire afin d'éviter d'avoir à toujours retaper les ids Git
 
 
-# et ouvrir vsCode
+# et ouvrir vsCode pour tester
 code
 
 ```
 
-linux
+sous linux
 
 ```bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
+# Stocke la clé privée en mémoire afin d'éviter d'avoir à toujours retaper les ids Git
 
 ```
 
-<!-- Etape suivante -->
+test
 
 ```js
-ssh-keygen -p
-// si bug mot de passe
-
-// addresse git pour effectuer un test => en CLI faire un :
+// Addresse git pour effectuer un test => en CLI faire un :
 git clone git@github.com:mt-shke/git-vscode-settings.git
+
+ssh-keygen -p
+// si le mot de passe est toujours demandé
 ```
 
--   config git settings
-
 ```bash
+# Configure les ids Git
 git config --global user.name "mon nom d'utilisateur"
 git config --global user.email "mon email associé a mon compte github"
 git config --global core.editor code
@@ -63,9 +66,11 @@ git config --global core.editor code
 <details>
 <summary>Plus si bug</summary>
 
-<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
-<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
-<!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+```js
+// <!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+// <!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+// <!-- plus de ressources si bug persiste, mais normalement falcutatif -->
+```
 
 ```bash
 https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
