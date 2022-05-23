@@ -278,7 +278,7 @@
     // R E A C T - N A T I V E
 
     "native component": {
-        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "scope": "javascript, typescript, react, javascriptreact, typescriptreact",
         "prefix": "nfc",
         "body": [
             "import { View, Text } from 'react-native';",
@@ -296,7 +296,7 @@
     },
 
     "native styleSheet": {
-        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "scope": "javascript, typescript, react, javascriptreact, typescriptreact",
         "prefix": "nsty",
         "body": [
             "import { StyleSheet } from 'react-native';",
@@ -312,14 +312,14 @@
     },
 
     "native inline style": {
-        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "scope": "javascript, typescript , react, javascriptreact, typescriptreact",
         "prefix": "nstl",
         "body": ["style={styles.$1} $2"],
         "description": "add native styles from stylesheet"
     },
 
     "inline style": {
-        "scope": "javascript, typescript ,typescript,react, javascriptreact",
+        "scope": "javascript, typescript , react, javascriptreact, typescriptreact",
         "prefix": "istl",
         "body": ["style={{$1}} $2"],
         "description": "add direct inline styles"

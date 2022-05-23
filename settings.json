@@ -11,4 +11,5 @@
     "workbench.tree.indent": 14
 }
 
-// vsCode origin params
+// vsCode origin params:
+// Extensions: Prettier, ESLint, Material icon theme, Live Server

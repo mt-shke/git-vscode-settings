@@ -14,7 +14,7 @@ ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
 // => Crée une clé ssh avec votre email
 
 cat ~/.ssh/id_rsa.pub
-// => Copie dans votre presse-papiers la clé ssh nouvellement crée dans le ficher id_rsa.pub, à partir de l'emplacement par défault: C:\Users\username\.ssh
+// => Copie dans votre presse-papiers la clé ssh nouvellement créee dans le ficher id_rsa.pub, à partir de l'emplacement par défault: C:\Users\username\.ssh
 ```
 
 ```js
