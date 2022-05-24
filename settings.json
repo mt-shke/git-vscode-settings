@@ -8,7 +8,22 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "prettier.tabWidth": 4,
-    "workbench.tree.indent": 14
+    "workbench.tree.indent": 14,
+
+    // plus
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "javascript": true
+    },
+    "editor.wordWrapColumn": 100,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // php - need xampp install & config
+    "php.validate.executablePath": "C:/xampp/php/php.exe"
 }
 
 // vsCode origin params:
