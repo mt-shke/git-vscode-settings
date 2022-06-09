@@ -11,19 +11,19 @@
         "description": "console log"
     },
     "Add className": {
-        "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
+        "scope": "javascript, typescript , typescriptreact, react, javascriptreact, html, php",
         "prefix": "cn",
         "body": "className='$1' $2",
         "description": "className"
     },
     "Add class": {
-        "scope": "javascript, typescript , typescriptreact,react, javascriptreact,html",
+        "scope": "javascript, typescript , typescriptreact,react, javascriptreact,html, php",
         "prefix": "cla",
         "body": "class='$1'",
         "description": "class"
     },
     "''": {
-        "scope": "javascript, typescript ,typescriptreact,react, javascriptreact,html",
+        "scope": "javascript, typescript ,typescriptreact,react, javascriptreact, html, php",
         "prefix": "''",
         "body": "'$1'$0",
         "description": "1 year saved in your life"
@@ -98,19 +98,19 @@
 
     // IF ELSE - TRY BLOCK
     "if statement": {
-        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact, php",
         "prefix": "iff",
         "body": ["if ($1) {$2}"],
         "description": "if statement"
     },
     "if else statement": {
-        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact, php",
         "prefix": "ifff",
         "body": ["if ($1) {", "$2", "} else {", "$3 ", "}"],
         "description": "if else statement"
     },
     "try catch": {
-        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact, php",
         "prefix": "tryc",
         "body": ["try {", "$1", "} catch(error) {", "$2 ", "}"],
         "description": "try catch"
@@ -278,7 +278,7 @@
     // R E A C T - N A T I V E
 
     "native component": {
-        "scope": "javascript, typescript, react, javascriptreact, typescriptreact",
+        "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
         "prefix": "nfc",
         "body": [
             "import { View, Text } from 'react-native';",
@@ -294,9 +294,32 @@
         ],
         "description": "native functionnal component"
     },
+    "ts native component": {
+        "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
+        "prefix": "ntfc",
+        "body": [
+            "import { View, Text,StyleSheet } from 'react-native';",
+            "",
+            "const $1 : React.FC = (props) => {",
+            "$3",
+            "return <View style={styles.container}>",
+            "<Text>$1$2",
+            "</Text>",
+            "</View>}",
+            "",
+            "export default $1;",
+            "",
+            "const styles = StyleSheet.create({",
+            "container: {",
+            "flex: 1,",
+            "},",
+            "});"
+        ],
+        "description": "native functionnal component"
+    },
 
     "native styleSheet": {
-        "scope": "javascript, typescript, react, javascriptreact, typescriptreact",
+        "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
         "prefix": "nsty",
         "body": [
             "import { StyleSheet } from 'react-native';",
@@ -312,14 +335,14 @@
     },
 
     "native inline style": {
-        "scope": "javascript, typescript , react, javascriptreact, typescriptreact",
+        "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
         "prefix": "nstl",
         "body": ["style={styles.$1} $2"],
         "description": "add native styles from stylesheet"
     },
 
     "inline style": {
-        "scope": "javascript, typescript , react, javascriptreact, typescriptreact",
+        "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
         "prefix": "istl",
         "body": ["style={{$1}} $2"],
         "description": "add direct inline styles"
@@ -331,6 +354,18 @@
         "prefix": "php",
         "body": ["<?php", "$1", "", "?>"],
         "description": "php"
+    },
+    "inline php": {
+        "scope": "html, php",
+        "prefix": "iphp",
+        "body": ["<?php $1 ?>"],
+        "description": "inline php"
+    },
+    "echo": {
+        "scope": "html, php",
+        "prefix": "ec",
+        "body": ["echo $1 ;", "$2"],
+        "description": "simple echo"
     },
     "echo br": {
         "scope": "html, php",
@@ -349,5 +384,11 @@
         "prefix": "prir",
         "body": ["echo '<pre>';", "print_r($1);", "echo '</pre>';", "$2"],
         "description": "echo print_r"
+    },
+    "arrow": {
+        "scope": "html, php",
+        "prefix": "--",
+        "body": ["->$1"],
+        "description": "arrow"
     }
 }
