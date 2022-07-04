@@ -264,13 +264,13 @@
     },
     "jsCode": {
         "scope": "markdown",
-        "prefix": "jsco",
+        "prefix": "cojs",
         "body": ["$1", "```js", "$2", "```", "$3"],
         "description": "jsCode"
     },
     "bashCode": {
         "scope": "markdown",
-        "prefix": "bco",
+        "prefix": "cob",
         "body": ["$1", "```bash", "$2", "```", "$3"],
         "description": "bashCode"
     },
