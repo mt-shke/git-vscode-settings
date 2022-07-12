@@ -21,10 +21,16 @@ Local/remote repository, init and pushes commands
     git commit -m "2nd commit message"
     git push -u origin branchName
 
+Clone commands
+
     git clone sshAddress => download sshAddress repository
+
+    git clone -b dev sshAddress => download dev branch, sshAddress repository
 
     git pull => get repository files
     git push -f origin main => force push to main
+
+Remote commands
 
     git remote set-url origin sshAddress => change git remote repository to sshAddress
 
