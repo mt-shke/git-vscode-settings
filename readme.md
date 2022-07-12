@@ -41,3 +41,8 @@ Branches commands
 
     git branch -d localBranch => delete local branch
     git push origin --delete branchName => delete remote branch
+
+Commits commands
+
+    git reset --hard origin/main => delete all commits not pushed on branch main
+    git reset --hard 0d1d7fc32 => delete all commits until 0d1d7fc32
