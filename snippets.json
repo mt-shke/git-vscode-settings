@@ -10,6 +10,12 @@
         "body": ["console.log($1)", "$2"],
         "description": "console log"
     },
+    "Add console error": {
+        "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
+        "prefix": "ce",
+        "body": ["console.error($1)", "$2"],
+        "description": "console error"
+    },
     "Add className": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact, html, php",
         "prefix": "cn",
@@ -94,6 +100,26 @@
         "prefix": "cbr",
         "body": ["(req,res) => {", "$1", "}", "$2"],
         "description": "callback function with req & res"
+    },
+
+    // Math
+    "Math random": {
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "prefix": "mr",
+        "body": ["Math.random() * $1"],
+        "description": "Math random function"
+    },
+    "Math floor": {
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "prefix": "mf",
+        "body": ["Math.floor($1)"],
+        "description": "Math floor function"
+    },
+    "Math ceil": {
+        "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+        "prefix": "mc",
+        "body": ["Math.ceil($1)"],
+        "description": "Math ceil function"
     },
 
     // IF ELSE - TRY BLOCK
