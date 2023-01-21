@@ -10,7 +10,7 @@ En CLI ou Git Bash:
 ```js
 // - Sur Git Bash, exécuter les commandes ci-dessous et choisir un mot de passe perso:
 
-ssh-keygen -t rsa -b 4096 -C "votre-email@exemple.fr"
+ssh-keygen -t rsa -b 4096 -C "michel.tcha@gmail.com"
 // => Crée une clé ssh avec votre email
 
 cat ~/.ssh/id_rsa.pub
@@ -57,8 +57,8 @@ ssh-keygen -p
 
 ```bash
 # Configure les ids Git
-git config --global user.name "mon nom d'utilisateur"
-git config --global user.email "mon email associé a mon compte github"
+git config --global user.name "mt-shke"
+git config --global user.email "michel.tcha@gmail.com"
 git config --global core.editor code
 
 ```
