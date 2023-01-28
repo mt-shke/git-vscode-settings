@@ -12,18 +12,18 @@
 
     // plus
     "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": false,
-        "markdown": false,
-        "javascript": true
-    },
+    // "github.copilot.enable": {
+    //     "*": true,
+    //     "yaml": false,
+    //     "plaintext": false,
+    //     "markdown": false,
+    //     "javascript": true
+    // },
     "editor.wordWrapColumn": 100,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 
     // php - need xampp install & config
-    "php.validate.executablePath": "C:/xampp/php/php.exe"
+    // "php.validate.executablePath": "C:/xampp/php/php.exe"
 }
 
 // vsCode origin params:
