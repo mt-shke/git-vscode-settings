@@ -288,17 +288,23 @@
         "body": ["<details>", "<summary>$1</summary>", "$2", "</details>"],
         "description": "1 year saved in your life"
     },
-    "jsCode": {
-        "scope": "markdown",
-        "prefix": "cojs",
-        "body": ["$1", "```js", "$2", "```", "$3"],
-        "description": "jsCode"
-    },
     "bashCode": {
         "scope": "markdown",
         "prefix": "cob",
         "body": ["$1", "```bash", "$2", "```", "$3"],
-        "description": "bashCode"
+        "description": "cob"
+    },
+    "jsCode": {
+        "scope": "markdown",
+        "prefix": "cojs",
+        "body": ["$1", "```js", "$2", "```", "$3"],
+        "description": "cojs"
+    },
+    "pyCode": {
+        "scope": "markdown",
+        "prefix": "copy",
+        "body": ["$1", "```py", "$2", "```", "$3"],
+        "description": "copy"
     },
 
     // R E A C T - N A T I V E

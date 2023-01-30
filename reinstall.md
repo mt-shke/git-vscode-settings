@@ -1,5 +1,6 @@
 ```js
 // sudo timedatectl list-timezones Europe/Paris
+// git config --global init.defaultBranch main
 ```
 
 brave
