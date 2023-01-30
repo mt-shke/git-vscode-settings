@@ -1,7 +1,24 @@
+<details>
+<summary>Kali</summary>
+
+VMWare
+
+```js
+VMWare kernel headers
+// sudo apt-get update
+// sudo apt-get dist-upgrade
+
+// reboot
+
+// sudo apt-get install –y linux-headers-$(uname -r)
+```
+
 ```js
 // sudo timedatectl list-timezones Europe/Paris
 // git config --global init.defaultBranch main
 ```
+
+</details>
 
 ```bash
 # git config --global init.defaultBranch main
