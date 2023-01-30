@@ -3,6 +3,10 @@
 // git config --global init.defaultBranch main
 ```
 
+```bash
+# git config --global init.defaultBranch main
+```
+
 brave
 
 ```js
