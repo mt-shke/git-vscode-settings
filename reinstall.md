@@ -10,7 +10,7 @@ VMWare kernel headers
 
 // reboot
 
-// sudo apt-get install –y linux-headers-$(uname -r)
+// sudo apt-get install linux-headers-$(uname -r)
 ```
 
 ```js
