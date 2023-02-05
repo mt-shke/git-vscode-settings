@@ -2,7 +2,6 @@
     "workbench.startupEditor": "none",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "material-icon-theme",
     "settingsSync.ignoredSettings": [],
     // prettier format
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -20,7 +19,9 @@
     //     "javascript": true
     // },
     "editor.wordWrapColumn": 100,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"
 
     // php - need xampp install & config
     // "php.validate.executablePath": "C:/xampp/php/php.exe"
