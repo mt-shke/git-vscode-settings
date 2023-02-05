@@ -1,27 +1,16 @@
 <details>
-<summary>Kali</summary>
+<summary>Reinstall Kali</summary>
 
-VMWare
-
-```js
-VMWare kernel headers
-// sudo apt-get update
-// sudo apt-get dist-upgrade
-
-// reboot
-
-// sudo apt-get install linux-headers-$(uname -r)
-```
+surfshark
 
 ```js
-// sudo timedatectl list-timezones Europe/Paris
-// git config --global init.defaultBranch main
+curl -f https://downloads.surfshark.com/linux/debian-install.sh --output surfshark-install.sh #gets the installation script
+cat surfshark-install.sh #shows script's content
+sh surfshark-install.sh #installs surfshark
 ```
-
-</details>
 
 ```bash
-# git config --global init.defaultBranch main
+# sudo timedatectl set-timezone Europe/Paris
 ```
 
 brave
@@ -37,3 +26,22 @@ brave
 
 // sudo apt install brave-browser
 ```
+
+</details>
+
+<details>
+<summary>Kali VMWare</summary>
+
+VMWare
+
+```js
+VMWare kernel headers
+// sudo apt-get update
+// sudo apt-get dist-upgrade
+
+// reboot
+
+// sudo apt-get install linux-headers-$(uname -r)
+```
+
+</details>

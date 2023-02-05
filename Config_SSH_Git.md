@@ -56,6 +56,8 @@ ssh-keygen -p
 ```
 
 ```bash
+# Git config 
+git config --global init.defaultBranch main
 # Configure les ids Git
 git config --global user.name "mt-shke"
 git config --global user.email "michel.tcha@gmail.com"
