@@ -33,6 +33,10 @@ Clone commands
 Remote commands
 
     git remote set-url origin sshAddress => change git remote repository to sshAddress
+    Display origin
+    git remote show origin
+    git config --get remote.origin.url
+    git remote show [remote-name] command
 
 Branches commands
 

@@ -56,7 +56,7 @@ ssh-keygen -p
 ```
 
 ```bash
-# Git config 
+# Git config
 git config --global init.defaultBranch main
 # Configure les ids Git
 git config --global user.name "mt-shke"
