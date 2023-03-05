@@ -10,6 +10,24 @@
         "body": ["console.log($1)", "$2"],
         "description": "console log"
     },
+    "Add string console log": {
+        "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
+        "prefix": "cls",
+        "body": ["console.log('$1')", "$2"],
+        "description": "console log"
+    },
+    "Add console log check": {
+        "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
+        "prefix": "clc",
+        "body": ["console.log('// console.log check: $1')", "$2"],
+        "description": "console log"
+    },
+    "Todo": {
+        "prefix": "tdo",
+        "body": ["TODO : $1", "$2"],
+        "description": "Thing to do before last commit"
+    },
+
     "Add console error": {
         "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
         "prefix": "ce",
@@ -32,6 +50,12 @@
         "scope": "javascript, typescript ,typescriptreact,react, javascriptreact, html, php",
         "prefix": "''",
         "body": "'$1'$0",
+        "description": "1 year saved in your life"
+    },
+    "document query selector": {
+        "scope": "javascript, typescript ,typescriptreact,react, javascriptreact, html, php",
+        "prefix": "docsel",
+        "body": "document.querySelector('$1')$0",
         "description": "1 year saved in your life"
     },
 
@@ -299,6 +323,12 @@
         "prefix": "cojs",
         "body": ["$1", "```js", "$2", "```", "$3"],
         "description": "cojs"
+    },
+    "cssCode": {
+        "scope": "markdown",
+        "prefix": "cocss",
+        "body": ["$1", "```css", "$2", "```", "$3"],
+        "description": "css code"
     },
     "pyCode": {
         "scope": "markdown",
