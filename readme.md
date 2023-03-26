@@ -52,6 +52,8 @@ Branches commands
     git branch -d localBranch => delete local branch
     git push origin --delete branchName => delete remote branch
 
+    git clone -b specificBranch sshAddress => clone specificBranch from sshAddress
+
 Commits commands
 
     git reset --hard origin/main => delete all commits not pushed on branch main
