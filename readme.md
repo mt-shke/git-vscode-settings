@@ -1,4 +1,6 @@
-Navigate commands
+<h1 style='padding:1rem;font-weight:bold' align='center'>Git VsCode Settings</h1>
+
+### Git commands commands
 
     ls => list files
     cd .. => change directory to .. (parent folder)
@@ -8,7 +10,7 @@ Navigate commands
     code . => launch vsCode with the current folder
     code . -r => launch vsCode with the current folder in the current vsCode window
 
-Local/remote repository, init and pushes commands
+### Local/remote repository, init and pushes commands
 
     git init => initialize current folder for git
     git remote add origin sshAdress => add a new git folder (sshAdress), linked to the current local folder
@@ -21,7 +23,7 @@ Local/remote repository, init and pushes commands
     git commit -m "2nd commit message"
     git push -u origin branchName
 
-Clone commands
+### Clone commands
 
     git clone sshAddress => download sshAddress repository
 
@@ -30,7 +32,7 @@ Clone commands
     git pull => get repository files
     git push -f origin main => force push to main
 
-Remote commands
+### Remote commands
 
     git remote set-url origin sshAddress => change git remote repository to sshAddress
     Display origin
@@ -38,7 +40,7 @@ Remote commands
     git config --get remote.origin.url
     git remote show [remote-name] command
 
-Branches commands
+### Branches commands
 
     git checkout -b dev => create dev branch and switch to it
     git checkout main => switch to main branch
@@ -54,7 +56,7 @@ Branches commands
 
     git clone -b specificBranch sshAddress => clone specificBranch from sshAddress
 
-Commits commands
+### Commits commands
 
     git reset --hard origin/main => delete all commits not pushed on branch main
     git reset --hard 0d1d7fc32 => delete all commits until 0d1d7fc32
