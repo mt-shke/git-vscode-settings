@@ -1,6 +1,4 @@
-<h1 style='padding:1rem;font-weight:bold' align='center'>Git VsCode Settings</h1>
-
-### Git commands commands
+Navigate commands
 
     ls => list files
     cd .. => change directory to .. (parent folder)
@@ -53,6 +51,7 @@
 
     git branch -d localBranch => delete local branch
     git push origin --delete branchName => delete remote branch
+    git push origin dev:main => push remote dev branch to main branch
 
     git clone -b specificBranch sshAddress => clone specificBranch from sshAddress
 

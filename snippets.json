@@ -58,6 +58,12 @@
       "body": "document.querySelector('$1')$0",
       "description": "1 year saved in your life"
    },
+   "document get element by id": {
+      "scope": "javascript, typescript ,typescriptreact,react, javascriptreact, html, php",
+      "prefix": "docid",
+      "body": "document.getElementById('$1')$0",
+      "description": "1 year saved in your life"
+   },
 
    // JAVASCRIPT - javascript snippets
    // S
