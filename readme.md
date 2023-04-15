@@ -27,7 +27,9 @@
 
     git clone sshAddress => download sshAddress repository
 
-    git clone -b dev sshAddress => download dev branch, sshAddress repository
+    git clone -b dev sshAddress => clone specificBranch from sshAddress
+
+### Pull commands
 
     git pull => get repository files
     git push -f origin main => force push to main
@@ -54,8 +56,6 @@
     git branch -d localBranch => delete local branch
     git push origin --delete branchName => delete remote branch
     git push origin dev:main => push remote dev branch to main branch
-
-    git clone -b specificBranch sshAddress => clone specificBranch from sshAddress
 
 ### Commits commands
 

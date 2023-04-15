@@ -10,12 +10,11 @@ sh surfshark-install.sh #installs surfshark
 ```
 
 ```bash
-# sudo timedatectl set-timezone Europe/Paris
-
-# sudo apt install gimp
-# sudo apt install git
-# sudo apt install nodejs
-# sudo apt install npm
+sudo timedatectl set-timezone Europe/Paris
+sudo apt install gimp
+sudo apt install git
+sudo apt install nodejs
+sudo apt install npm
 ```
 
 brave
