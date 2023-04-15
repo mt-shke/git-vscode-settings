@@ -1,4 +1,6 @@
-Navigate commands
+<h1 style='padding:1rem;font-weight:bold' align='center'>Git VsCode Settings</h1>
+
+### Git commands commands
 
     ls => list files
     cd .. => change directory to .. (parent folder)
