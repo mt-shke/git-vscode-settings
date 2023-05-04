@@ -31,6 +31,12 @@ sudo apt update
 sudo apt install brave-browser
 ```
 
+etcher
+
+```js
+// https://github.com/balena-io/etcher/releases/
+```
+
 </details>
 
 <details>
