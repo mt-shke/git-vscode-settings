@@ -26,6 +26,10 @@
    "typescript.updateImportsOnFileMove.enabled": "always",
    "liveServer.settings.donotShowInfoMsg": true
 
+   //    "files.associations": {
+   //       "*.css": "tailwindcss"
+   //    }
+
    // php - need xampp install & config
    // "php.validate.executablePath": "C:/xampp/php/php.exe"
 }

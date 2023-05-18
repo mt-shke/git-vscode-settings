@@ -65,7 +65,7 @@
       "description": "1 year saved in your life"
    },
 
-   // JAVASCRIPT - javascript snippets
+   // J A V A S C R I P T - javascript snippets
    // S
    // C
    // R
@@ -78,6 +78,13 @@
       "prefix": "co",
       "body": ["const $1 = $2", "$3"],
       "description": "const variable"
+   },
+
+   "classname with inner style": {
+      "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+      "prefix": "cns",
+      "body": ["className={`${styles.$1} $2`}"],
+      "description": "className with inner style object"
    },
 
    // FUNCTION
@@ -172,7 +179,14 @@
       "description": "Math ceil function"
    },
 
-   //   ARRAY Method - array
+   //   A R R A Y Method - array
+   "New Array": {
+      "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+      "prefix": "newarr",
+      "body": ["const newArr = new Array(50).fill(true).map((el,ind) => ind)"],
+      "description": "Create a new array"
+   },
+
    "Array filter": {
       "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
       "prefix": ".filt5",
@@ -302,6 +316,43 @@
       "prefix": "intf",
       "body": ["interface $1 {", "$2 : $3", "}"],
       "description": "Typescript interface"
+   },
+
+   "TS FC with interface without children": {
+      "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+      "prefix": "tfch",
+      "body": [
+         "interface I$1 {",
+         "$2: $3",
+         "}",
+         "",
+         "const $1:React.FC<I$1> = ({$2}) => {",
+         "$4",
+         "return <div$6>$5</div>}",
+         "",
+         "export default $1;",
+         "",
+         "$7"
+      ],
+      "description": "typescript react functionnal component"
+   },
+   "TS FC with interface with children": {
+      "scope": "javascript, typescript, typescriptreact, react, javascriptreact",
+      "prefix": "tfchi",
+      "body": [
+         "interface I$1 {",
+         "children: React.ReactNode",
+         "}",
+         "",
+         "const $1:React.FC<I$1> = ({children}) => {",
+         "$2",
+         "return <div$4>$3</div>}",
+         "",
+         "export default $1;",
+         "",
+         "$5"
+      ],
+      "description": "typescript react functionnal component"
    },
 
    // MARKDOWN - markdown snippets
@@ -460,6 +511,23 @@
       "prefix": "istl",
       "body": ["style={{$1}} $2"],
       "description": "add direct inline styles"
+   },
+
+   "use Hook pattern": {
+      "scope": "javascript, typescript ,typescript, react, javascriptreact, typescriptreact",
+      "prefix": "uuse",
+      "body": [
+         "import { useEffect } from 'react';",
+         "",
+         "const $1 = () => {",
+         "useEffect(() => {",
+         "$2",
+         "},[])",
+         "return }",
+         "",
+         "export default $1;"
+      ],
+      "description": "native functionnal component"
    },
 
    //  P H P - php snippets
