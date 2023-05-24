@@ -45,7 +45,8 @@ etcher
 VMWare
 
 ```js
-
+// https://www.vmware.com/products/workstation-player.html
+ 
 // chmod +rwx ./VMware-Player-Full-17.0.0-20800274.x86_64.bundle
 // sudo ./VMwa...
 
