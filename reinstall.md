@@ -37,6 +37,12 @@ etcher
 // https://github.com/balena-io/etcher/releases/
 ```
 
+youtube-dl
+
+```js
+// sudo apt install youtube-dl
+```
+
 </details>
 
 <details>
@@ -47,7 +53,7 @@ VMWare
 ```js
 // https://www.kali.org/get-kali/#kali-platforms
 // https://www.vmware.com/products/workstation-player.html
- 
+
 // chmod +rwx ./VMware-Player-Full-17.0.0-20800274.x86_64.bundle
 // sudo ./VMwa...
 
