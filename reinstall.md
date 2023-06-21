@@ -15,6 +15,8 @@ sudo apt install gimp
 sudo apt install git
 sudo apt install nodejs
 sudo apt install npm
+
+# vscode => vscode website => sudo apt install ./vsc...
 ```
 
 brave
@@ -37,16 +39,10 @@ etcher
 // https://github.com/balena-io/etcher/releases/
 ```
 
-youtube-dl
-
-```js
-// sudo apt install youtube-dl
-```
-
 </details>
 
 <details>
-<summary>Kali VMWare</summary>
+<summary>VMWare</summary>
 
 VMWare
 
