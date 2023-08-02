@@ -17,6 +17,12 @@ sudo apt install nodejs
 sudo apt install npm
 
 # vscode => vscode website => sudo apt install ./vsc...
+
+# update npm node
+
+# sudo npm cache clean -f
+# sudo npm install -g n
+# sudo n stable
 ```
 
 brave
