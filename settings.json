@@ -24,7 +24,8 @@
    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
    "explorer.confirmDragAndDrop": false,
    "typescript.updateImportsOnFileMove.enabled": "always",
-   "liveServer.settings.donotShowInfoMsg": true
+   "liveServer.settings.donotShowInfoMsg": true,
+   "window.titleBarStyle": "custom"
 
    //    "files.associations": {
    //       "*.css": "tailwindcss"
