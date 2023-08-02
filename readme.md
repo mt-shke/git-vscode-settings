@@ -61,3 +61,13 @@
 
     git reset --hard origin/main => delete all commits not pushed on branch main
     git reset --hard 0d1d7fc32 => delete all commits until 0d1d7fc32
+
+### FU
+
+We live in a shit society of shitty hackers affraid to lose their stupids jobs, and with a so bad and shit mindset, they can even try to hack you so you do not share your stuff, or hack you to steal it when you don't want to.
+
+Internet was maid, for all. Not only some shitty people.
+
+Wikipedia, etc all that stuff... but now, their shitty selfish mindset will just destroy it.
+
+Just go fu
