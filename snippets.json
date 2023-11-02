@@ -13,8 +13,14 @@
    "Add string console log": {
       "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
       "prefix": "cls",
-      "body": ["console.log('$1')", "$2"],
+      "body": ["console.log('$1 : ', $2)", "$3"],
       "description": "console log"
+   },
+   "Add string console log new date": {
+      "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
+      "prefix": "clsd",
+      "body": ["console.log('New date:', new Date(Date.now()));"],
+      "description": "console log with date"
    },
    "Add console log check": {
       "scope": "javascript, typescript , typescriptreact, react, javascriptreact",
