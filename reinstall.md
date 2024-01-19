@@ -23,6 +23,10 @@ sudo apt install npm
 # sudo npm cache clean -f
 # sudo npm install -g n
 # sudo n stable
+
+# curl -fsSL https://bun.sh/install | bash 
+# /.bun 
+# /usr/share/code 
 ```
 
 reinstall node & npm
