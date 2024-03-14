@@ -26,7 +26,6 @@
 ### Clone commands
 
     git clone sshAddress => download sshAddress repository
-
     git clone -b dev sshAddress => clone specificBranch from sshAddress
 
 ### Pull commands
