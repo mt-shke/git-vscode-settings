@@ -1,13 +1,21 @@
 {
-   "workbench.startupEditor": "none",
-   "terminal.integrated.enableMultiLinePasteWarning": false,
-   "workbench.colorTheme": "Monokai",
-   "settingsSync.ignoredSettings": [],
    // prettier format
+   "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[java]": {
+      "editor.defaultFormatter": "redhat.java"
+   },
    "editor.defaultFormatter": "esbenp.prettier-vscode",
    "editor.formatOnSave": true,
    "prettier.tabWidth": 3,
    "workbench.tree.indent": 14,
+   "workbench.settings.applyToAllProfiles": [],
+   "editor.dropIntoEditor.preferences": [],
+   "workbench.startupEditor": "none",
+   "terminal.integrated.enableMultiLinePasteWarning": "never",
+   // "workbench.colorTheme": "Monokai",
+   "settingsSync.ignoredSettings": [],
 
    // plus
    "editor.inlineSuggest.enabled": true,
